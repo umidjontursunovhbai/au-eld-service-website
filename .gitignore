@@ -1,0 +1,4 @@
+scrollcraft/builds/**/node_modules/
+scrollcraft/builds/**/lab/
+scrollcraft/builds/**/.DS_Store
+.certs/
