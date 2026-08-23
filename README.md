@@ -1,16 +1,18 @@
-# AU ELD Service · Night Operations
+# AU ELD Service · Night Mile
 
-A premium, responsive one-page website built as a live night-operations surface.
-Scrolling advances a clearly labelled sample driver incident from incoming
-request to record reconciliation and a usable contact composer.
+A premium, responsive one-page scroll experience built as one continuous
+night-highway world. Scrolling scrubs the truck footage, reveals the AU ELD
+benefits, 24/7 support workflow and free-week offer, grows the AU Lane, and ends
+at direct Phone, Email and Telegram routes.
 
 ## Included
 
-- Scroll-driven map, record scan, horizontal service rail, and signature record reconcile animation
+- Four-part scroll-scrubbed night-highway footage with seamless crossfades
+- Signature AU Lane road draw, route runner, rain field and contact branches
+- Three compact benefit scenes, alert-assisted support story and animated offer
 - Responsive desktop and mobile layouts
-- Reduced-motion fallback with all content reachable
+- Reduced-motion poster fallback with all content reachable and no video fetch
 - Direct phone, email, and Telegram links
-- Contact composer that opens the visitor's email application with a prefilled message
 
 ## Preview
 
@@ -36,17 +38,13 @@ self-signed, browsers show a certificate warning until that certificate is
 explicitly trusted on the machine. Production hosting should use a certificate
 from its hosting provider or another trusted certificate authority.
 
-## Before launch
+## Contacts
 
-Replace the sample phone number, email address, and Telegram account in the
-`CONTACT` object at the top of `script.js`. Every contact link on the page reads
-from that single object.
-
-The contact form intentionally opens the visitor's email application. Connect
-it to a real form endpoint later if submissions should happen without leaving
-the page.
+The phone number, email address and Telegram username are managed in the
+`CONTACT` object at the top of `script.js`. Every contact action reads from that
+single object.
 
 ## Scrollcraft source and QA
 
 The authored brief, build plan, source build, and screenshot-based QA artifacts
-live under `scrollcraft/builds/au-eld-night-operations/`.
+live under `scrollcraft/builds/au-eld-night-mile/`.
