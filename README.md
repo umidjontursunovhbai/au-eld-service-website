@@ -1,17 +1,18 @@
-# AU ELD Service · Night Mile
+# AU ELD Service · Signal Shift
 
-A premium, responsive one-page scroll experience built as one continuous
-night-highway world. Scrolling scrubs the truck footage, reveals the AU ELD
-benefits, 24/7 support workflow and free-week offer, grows the AU Lane, and ends
-at direct Phone, Email and Telegram routes.
+A premium, responsive one-page homepage built as an operational signal ledger.
+Scrolling advances the AU ELD support checks, pans through the included service
+manifest, lands the free-week offer and finishes at direct Phone, Telegram and
+Email routes.
 
 ## Included
 
-- Four-part scroll-scrubbed night-highway footage with seamless crossfades
-- Signature AU Lane road draw, route runner, rain field and contact branches
-- Three compact benefit scenes, alert-assisted support story and animated offer
+- Signature Shift Trace, live canvas support field and route checkpoints
+- Scroll-pinned support sequence with human support kept primary
+- Horizontal service manifest with all requested AU ELD benefits
+- One-week-free offer, $120 monthly price and service promise
 - Responsive desktop and mobile layouts
-- Reduced-motion poster fallback with all content reachable and no video fetch
+- Reduced-motion fallback with all content reachable
 - Direct phone, email, and Telegram links
 
 ## Preview
@@ -40,11 +41,10 @@ from its hosting provider or another trusted certificate authority.
 
 ## Contacts
 
-The phone number, email address and Telegram username are managed in the
-`CONTACT` object at the top of `script.js`. Every contact action reads from that
-single object.
+Phone, Telegram and Email are direct semantic links in `index.html` and are
+verified during QA.
 
 ## Scrollcraft source and QA
 
-The authored brief, build plan, source build, and screenshot-based QA artifacts
-live under `scrollcraft/builds/au-eld-night-mile/`.
+The authored brief, build plan, source build, report and screenshot-based QA
+artifacts live under `scrollcraft/builds/au-eld-signal-shift/`.

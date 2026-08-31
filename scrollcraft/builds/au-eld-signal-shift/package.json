@@ -1,0 +1,14 @@
+{
+  "name": "au-eld-signal-shift",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "node /Users/gg/.codex/skills/scrollcraft/scripts/serve.mjs --root . --port 4190",
+    "shoot:desktop": "node /Users/gg/.codex/skills/scrollcraft/scripts/shoot.mjs --url http://127.0.0.1:4190 --out lab/desktop",
+    "shoot:mobile": "node /Users/gg/.codex/skills/scrollcraft/scripts/shoot.mjs --url http://127.0.0.1:4190 --out lab/mobile --width 390 --height 844",
+    "shoot:reduced": "node /Users/gg/.codex/skills/scrollcraft/scripts/shoot.mjs --url http://127.0.0.1:4190 --out lab/reduced --reduced-motion"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}

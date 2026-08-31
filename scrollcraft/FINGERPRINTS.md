@@ -30,6 +30,7 @@ changes only grammar and world will fail it.
 |---|---|---|---|---|---|---|---|---|
 | au-eld-night-operations | Live surface | Operable app rail plus status strip | Running sample incident on a code-native route surface | `pin/live → reveal → pan → parallax/pointer → bespoke reconcile → flow/input`, 6 beats, 10.40vh | Verified record remains beside an actual composer and direct contact shelf | Three source records separate, align by timestamp, and seal into one incident | Cold graphite technical nocturne | 4173 |
 | au-eld-night-mile | Continuous world | Clickable route-waypoint rail plus floating Contact destination | Full AU mark opening into a photographic highway | Four 1.4vh worldflight legs carrying three benefit scenes, shift watch, offer and contact, total 6.6vh | Free-week invitation and logo reunion with three direct contact choices | AU logo slash becomes the highway and contact route | Cinematic wet-highway nocturne | 4173 |
+| au-eld-signal-shift | Operational signal ledger | Vertical coverage spine plus slim brand/CTA header | Off-axis editorial promise orbiting a live AU signal core | `flow/kinetic → pin/trace → pan → reveal/flow → flow/fanout`, 5 beats, 9.6vh desktop | Phone-first rounded switchboard fed by the completed trace | Shift Trace stamps each support check and becomes the contact routes | Code-native technical nocturne | 4173 |
 
 ---
 
@@ -42,6 +43,7 @@ as a constraint, so writing them down is the whole point.
 
 - **au-eld-night-operations** claims Live Surface grammar, an app-rail/status-strip navigation, a running incident as the opening state, a six-beat 10.40vh timeline, the verified-record plus composer close, and the three-channel Record Reconcile signature. It shares no dimensions with an earlier registered row because this is the first registered build.
 - **au-eld-night-mile** claims Continuous World grammar, route-waypoint navigation, a full-mark photographic opening, four equal worldflight legs over 6.6vh, the free-week invitation plus three-choice contact close, and the AU Lane signature. It differs from Night Operations in all six registered dimensions.
+- **au-eld-signal-shift** claims Operational Signal Ledger grammar, coverage-spine navigation, an off-axis signal-core hero, a five-beat 9.6vh flow/pin/pan sequence, a phone-first switchboard close, and the Shift Trace signature. It differs from Night Operations in all six dimensions and from Night Mile in five.
 
 ---
 
