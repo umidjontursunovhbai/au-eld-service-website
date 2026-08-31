@@ -1,4 +1,3 @@
-scrollcraft/builds/**/node_modules/
-scrollcraft/builds/**/lab/
-scrollcraft/builds/**/.DS_Store
 .certs/
+nginx.preview.conf
+.DS_Store

@@ -1,50 +1,38 @@
-# AU ELD Service · Signal Shift
+# AU ELD Service · Watchline
 
-A premium, responsive one-page homepage built as an operational signal ledger.
-Scrolling advances the AU ELD support checks, pans through the included service
-manifest, lands the free-week offer and finishes at direct Phone, Telegram and
-Email routes.
+A custom, one-page AU ELD marketing site built from scratch with semantic HTML,
+CSS and a small JavaScript motion layer. It does not use Scrollcraft or another
+UI framework.
 
-## Included
+## Direction
 
-- Signature Shift Trace, live canvas support field and route checkpoints
-- Scroll-pinned support sequence with human support kept primary
-- Horizontal service manifest with all requested AU ELD benefits
-- One-week-free offer, $120 monthly price and service promise
-- Responsive desktop and mobile layouts
-- Reduced-motion fallback with all content reachable
-- Direct phone, email, and Telegram links
+Watchline is based on the visual language of an after-hours fleet support desk:
+route traces, operational labels, condensed dispatch typography and a human
+attention state. The design plan and critique are documented in `DESIGN.md`.
 
-## Preview
+## Content
 
-Run a local server from this folder:
+- Driver reviews 3–4 times per shift
+- 24/7 driver support and real-time fleet monitoring
+- Audit, compliance, profile and BOL support
+- AU ELD device and integration coverage
+- One-week free trial and $120 per-truck monthly price
+- Direct Phone, Telegram and Email actions
 
-```bash
-python3 -m http.server 4173
-```
+## Local preview
 
-Then visit `http://localhost:4173`.
-
-### HTTPS preview
-
-Run the dependency-free local HTTPS server:
+From this directory:
 
 ```bash
-node serve-https.mjs
+python3 -m http.server 4190 --bind 127.0.0.1
 ```
 
-Then visit `https://localhost:4174`. The first run creates a development-only
-certificate inside the git-ignored `.certs/` directory. Because it is locally
-self-signed, browsers show a certificate warning until that certificate is
-explicitly trusted on the machine. Production hosting should use a certificate
-from its hosting provider or another trusted certificate authority.
+Open `http://127.0.0.1:4190/`.
 
-## Contacts
+## Quality floor
 
-Phone, Telegram and Email are direct semantic links in `index.html` and are
-verified during QA.
-
-## Scrollcraft source and QA
-
-The authored brief, build plan, source build, report and screenshot-based QA
-artifacts live under `scrollcraft/builds/au-eld-signal-shift/`.
+- Responsive from 320px through wide desktop
+- No horizontal page scrolling
+- Semantic contact links and keyboard focus states
+- Grouped text reveal, scroll-driven background movement and hover feedback
+- Reduced-motion support
