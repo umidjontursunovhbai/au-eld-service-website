@@ -1,5 +1,38 @@
 # AU ELD Watchline — design direction
 
+## September refinement: the night route
+
+Keep the established six-color palette and Barlow Condensed / Manrope / IBM Plex
+Mono roles. Increase utility text to 10–12px and display line-height to .98.
+The audience is fleet owners; the page's job is to explain support and start a
+conversation. Replace the abstract logo radar with a bespoke top-down truck on
+an illuminated route. This illustration is the single visual signature; its
+route pulses gently, while the content enters in quick, complete groups.
+
+Layout: [clear service promise | night-route illustration] → compact facts →
+human support / three signals → three service columns → trial / monthly price →
+phone-first contact. Use rounded 20–28px surfaces and quiet dividers. Remove
+diagonal corner styling, giant gaps, outline headings, and simulated live states.
+Keep all original business facts and direct contact destinations.
+
+Pre-build critique: a dashboard of decorative status badges would repeat the old
+generic direction. The truck illustration grounds the hero in transportation;
+the support panel explains capabilities, not fabricated live monitoring data.
+
+Implemented motion: native Web Animations headline lift/rotation, a short soft
+settle on rows, scale entry on the illustration and price, and simultaneous
+support reveal. Hero-only text delay is capped at 110ms. The truck advances with
+scroll; route pulses stop when the scene leaves the viewport. Contact arrow and
+button hover motion remains small. Reduced-motion changes cancel active reveals.
+
+QA: reviewed desktop, 805px tablet, 390px mobile and 320×568 contact layouts.
+Document width matches client width at checked sizes. All three support signals
+reveal together. Contact destinations preserved; browser warning/error log empty.
+Reduced motion leaves no hidden reveal content; disabling JavaScript leaves
+content visible. The mobile contact bar hides when the contact section is visible.
+Removed contact overflow clipping so entry motion is not cut at the border.
+The refinement is local and has not been published to GitHub Pages.
+
 ## Subject
 
 AU ELD is a human-led ELD compliance and driver-support service for US trucking

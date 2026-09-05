@@ -1,238 +1,100 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#071018">
-    <meta name="description" content="AU ELD Service provides 24/7 driver support, compliance guidance, fleet monitoring and direct help throughout every shift.">
-    <title>AU ELD Service | Every Shift, Watched</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23071018'/%3E%3Cpath d='M5 23 14 7h5l8 16h-5l-2-4h-8l-2 4H5Zm9-8h4l-2-4-2 4Z' fill='%2370c8ff'/%3E%3C/svg%3E">
-    <script>document.documentElement.classList.add('js');</script>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="page-progress" aria-hidden="true"><span></span></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F5F7FA">
+  <meta name="description" content="AU ELD Service. Real people behind every shift. 24/7 driver support, ELD monitoring and compliance help. Try one week free, then $120 per truck/month.">
+  <title>AU ELD Service — Every driver. Checked.</title>
+  <link rel="icon" href="assets/au-eld-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=open-road-1">
+  <script src="script.js?v=open-road-1" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="header">
+    <a class="brand" href="#top" aria-label="AU ELD Service home">
+      <img src="assets/au-eld-mark.png" width="52" height="42" alt="">
+      <span>AU ELD<small>Service</small></span>
+    </a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#support">Our people</a><a href="#services">What’s included</a><a href="#pricing">Pricing</a>
+    </nav>
+    <a class="button button--small" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+  </header>
 
-    <div class="ambient-world" aria-hidden="true">
-      <div class="ambient-haze ambient-haze--one"></div>
-      <div class="ambient-haze ambient-haze--two"></div>
-      <svg class="ambient-map" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-        <g class="ambient-map__routes">
-          <path class="route route--ghost" d="M-80 176C203 80 317 354 568 254S827 43 1084 185s244 344 478 193"></path>
-          <path class="route route--main" d="M-120 655c273 37 289-257 545-214s325 339 563 223 199-377 548-326"></path>
-          <path class="route route--minor" d="M183-80c8 264 235 275 313 466s-4 345 195 563"></path>
-          <circle cx="183" cy="207" r="7"></circle>
-          <circle cx="566" cy="255" r="7"></circle>
-          <circle cx="986" cy="664" r="7"></circle>
-          <circle cx="1258" cy="300" r="7"></circle>
-        </g>
-      </svg>
-      <div class="grain"></div>
-    </div>
-
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="AU ELD Service home">
-        <span class="brand__mark"><img src="assets/au-eld-mark.png" alt=""></span>
-        <span class="brand__name">AU ELD</span>
-        <span class="brand__service">Service</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#support">Driver watch</a>
-        <a href="#included">Included</a>
-        <a href="#offer">Free week</a>
-      </nav>
-      <a class="header-call" href="tel:+14408086300">
-        <span class="header-call__desktop">Call the team</span>
-        <span class="header-call__mobile">Call now</span>
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5c.9-.9 2.1-.5 2.6.4l1.5 2.7c.4.8.2 1.7-.5 2.2l-1.2.9a13 13 0 0 0 5.8 5.8l.9-1.2c.5-.7 1.4-.9 2.2-.5l2.7 1.5c.9.5 1.3 1.7.4 2.6l-1.1 1.1c-1 1-2.6 1.4-4 1C8.2 18.8 5.2 15.8 2.5 9.7c-.4-1.4 0-3 1-4L5 4.5Z"></path></svg>
-      </a>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="hero__copy">
-          <p class="kicker" data-reveal="fade">Driver support · every shift</p>
-          <h1 class="hero__title" aria-label="Your ELD doesn't clock out. Neither do we.">
-            <span class="hero__line" data-reveal="line">Your ELD</span>
-            <span class="hero__line hero__line--outline" data-reveal="line">doesn't clock out.</span>
-            <span class="hero__line hero__line--quiet" data-reveal="line">Neither do we.</span>
-          </h1>
-          <p class="hero__intro" data-reveal="fade">Your drivers are reviewed throughout the shift, issues surface early, and a real support specialist helps with the next useful action.</p>
-          <div class="hero__actions" data-reveal="fade">
-            <a class="action action--primary" href="#contact"><span>Start your free week</span><span class="action__arrow" aria-hidden="true">↗</span></a>
-            <a class="action action--quiet" href="#support">See the watchline</a>
-          </div>
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-top">
+        <div>
+          <p class="eyebrow" data-enter>AU ELD / Driver support &amp; compliance</p>
+          <h1><span data-enter="headline">Every driver.</span><span class="title-accent" data-enter="headline">Checked.<svg viewBox="0 0 480 26" aria-hidden="true"><path pathLength="1" d="M5 17Q170 0 473 12"/></svg></span></h1>
         </div>
-
-        <div class="watch-dial" data-reveal="scale" aria-label="AU ELD support team online">
-          <div class="watch-dial__orbit watch-dial__orbit--outer"></div>
-          <div class="watch-dial__orbit watch-dial__orbit--inner"></div>
-          <div class="watch-dial__sweep"></div>
-          <div class="watch-dial__core">
-            <img src="assets/au-eld-mark.png" alt="AU ELD">
-            <span class="watch-dial__status"><i></i> Team online</span>
-          </div>
-          <span class="watch-dial__signal watch-dial__signal--a"><i></i> Log signal</span>
-          <span class="watch-dial__signal watch-dial__signal--b"><i></i> ELD status</span>
-          <span class="watch-dial__signal watch-dial__signal--c"><i></i> Road alert</span>
+        <div class="hero-intro" data-enter>
+          <p>3–4 reviews per driver, every shift.<br> Our team checks the logs, watches the ELD connection, and helps drivers resolve issues.</p>
+          <a class="button" href="#contact">Start your free week <span aria-hidden="true">↗</span></a>
+          <small>Then $120 per truck / month. No hidden fees.</small>
         </div>
+      </div>
+      <figure class="hero-photo" data-enter="photo">
+        <img src="assets/open-road-hero.jpg" width="1536" height="1024" fetchpriority="high" alt="Blue semi truck travelling along an open highway through rolling hills">
+        <figcaption><span class="photo-caption"><i aria-hidden="true"></i>On the road.<br>Not on your own.</span><a href="#support" class="photo-link" aria-label="Explore our driver support"><span>Inside<br>the service</span><b aria-hidden="true">↓</b></a></figcaption>
+        <div class="photo-tag" aria-hidden="true">Driver support / 24 hours a day</div>
+      </figure>
+      <div class="intro-strip" data-enter><p>A second set of eyes.<br> <strong>On every shift.</strong></p><div><strong>24/7</strong><span>dedicated support</span></div><div><strong>3–4</strong><span>checks per driver, per shift</span></div><a href="#pricing">Simple pricing.<br><span>No hidden fees ↗</span></a></div>
+    </section>
 
-        <div class="hero__edge-note" data-reveal="fade">
-          <span>AU / WATCHLINE</span>
-          <span>Human-led support</span>
+    <section class="support shell section" id="support">
+      <div class="support-story" data-enter>
+        <p class="eyebrow">What happens during a shift</p>
+        <h2>We don’t wait<br><em>for the call.</em></h2>
+        <p class="body-copy">Our team checks every driver 3–4 times per shift. Automated alerts bring issues to our attention, and a real person takes it from there.</p>
+        <a href="#contact" class="text-link">Talk to the support team <span aria-hidden="true">↗</span></a>
+        <div class="human-note"><span class="human-note__mark">AU</span><p>Behind the technology,<br><strong>there’s always a team.</strong></p></div>
+      </div>
+      <div class="support-signals" data-enter="group">
+        <article><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v18H5V5h2m1 3h6m-6 4h6m-6 4h3"/><path d="m14 16 2 2 5-6"/></svg></span><div><h3>A closer look at every log.</h3><p>Log errors trigger an alert, so our support team can check what needs attention.</p></div></article>
+        <article><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v5m8-5v5M6 8h12v3a6 6 0 0 1-12 0Zm6 9v4"/></svg></span><div><h3>A watch on the connection.</h3><p>When an ELD is opened or disconnected, the team is notified and follows up.</p></div></article>
+        <article><span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 3-4 18m12-18 4 18M12 4v3m0 4v3m0 4v3"/></svg></span><div><h3>A heads-up for the road.</h3><p>Alerts 20 miles before a weigh station or police location help the team prepare the driver.</p></div></article>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="shell section">
+        <div class="section-top" data-enter><div><p class="eyebrow">Included with AU ELD</p><h2>The device. The logs.<br><em>The follow-through.</em></h2></div><p class="body-copy">One monthly service.<br> Here’s what it covers.</p></div>
+        <div class="service-grid" data-enter="group">
+          <article class="service-card"><div class="card-top"><span class="card-symbol" aria-hidden="true">↗</span><small>During the shift</small></div><h3>Driver support</h3><ul><li>Real-time fleet monitoring</li><li>24/7 dedicated driver support</li><li>Fast issue resolution</li></ul></article>
+          <article class="service-card"><div class="card-top"><span class="card-symbol" aria-hidden="true">✓</span><small>Behind the records</small></div><h3>Compliance</h3><ul><li>Full audit support</li><li>Professional compliance consulting</li><li>Profile &amp; BOL fixing</li></ul></article>
+          <article class="service-card"><div class="card-top"><span class="card-symbol" aria-hidden="true">⌁</span><small>In the cab</small></div><h3>ELD &amp; connections</h3><ul><li>AU ELD device</li><li>Connected integrations</li><li>No hidden fees</li></ul></article>
         </div>
-      </section>
+        <div class="integrations" data-enter><p>Connected to the tools<br> your fleet already uses.</p><ul aria-label="Integrations"><li>Highway</li><li>MacroPoint</li><li>Trucking Cloud</li><li>project44</li></ul></div>
+      </div>
+    </section>
 
-      <section class="fact-rail" aria-label="Service facts">
-        <div class="fact" data-reveal="row"><strong>3–4</strong><span>driver checks<br>each shift</span></div>
-        <div class="fact" data-reveal="row"><strong>24/7</strong><span>dedicated<br>driver support</span></div>
-        <div class="fact" data-reveal="row"><strong>1 week</strong><span>free trial<br>to start</span></div>
-        <div class="fact" data-reveal="row"><strong>$120</strong><span>per truck<br>each month</span></div>
-      </section>
+    <section class="pricing shell section" id="pricing">
+      <div class="trial-panel" data-enter="group">
+        <div class="trial-copy"><p class="eyebrow">Limited-time offer</p><h2>Your first week.<br><span>On us.</span></h2><p>Try the device, monitoring and driver support<br>before your first paid month.</p><a class="button button--white" href="#contact">Start your free week <span aria-hidden="true">↗</span></a></div>
+        <div class="price-ticket"><span class="ticket-label">After your free trial</span><p class="price"><sup>$</sup>120</p><span class="price-unit">per truck / month</span><div class="ticket-divider"></div><p>ELD + monitoring + support</p><span class="ticket-foot">One price. No hidden fees.</span></div>
+      </div>
+      <div class="promise" data-enter><span aria-hidden="true">✓</span><p><strong>We stand behind our service.</strong> If a violation occurs because of our ELD service, the affected driver gets that month of service free.</p></div>
+    </section>
 
-      <section class="support-section section-shell" id="support">
-        <div class="section-heading">
-          <p class="kicker" data-reveal="fade">The driver watch</p>
-          <h2 data-reveal="line">Every signal reaches a person.</h2>
-          <p data-reveal="fade">Automation catches the moment. Your assigned support team reads the situation, checks the driver and handles what comes next.</p>
-        </div>
+    <section class="contact shell section" id="contact">
+      <div class="contact-title" data-enter><p class="eyebrow">Direct to AU ELD</p><h2>Your next shift.<br><em>Let’s talk.</em></h2><p class="body-copy">Ask about your fleet or start your free week.<br>These channels go directly to our team.</p></div>
+      <div class="contact-channels" data-enter="group">
+        <button type="button" class="phone-channel" data-copy-phone aria-label="Copy phone number +1 (440) 808-6300"><small>Phone number</small><strong>+1 (440) 808-6300</strong><span><span data-copy-label>Click to copy the number</span><b aria-hidden="true">⧉</b></span></button>
+        <a class="channel" href="https://t.me/AUELD_manager" target="_blank" rel="noreferrer"><span class="channel-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 18-7-4 18-6-6-4 3 1-6 9-6-11 7Z"/></svg></span><span><small>Message on Telegram</small><strong>@AUELD_manager</strong></span><b aria-hidden="true">↗</b></a>
+        <a class="channel" href="mailto:aueldservice@gmail.com"><span class="channel-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><span><small>Send us an email</small><strong>aueldservice@gmail.com</strong></span><b aria-hidden="true">↗</b></a>
+      </div>
+    </section>
+  </main>
 
-        <div class="signal-board" data-signal-board>
-          <div class="signal-board__human" data-reveal="fade">
-            <span class="signal-board__eyebrow">Support specialist</span>
-            <div class="human-state">
-              <span class="human-state__avatar">AU</span>
-              <span><strong>On duty</strong><small>Watching the active shift</small></span>
-            </div>
-            <p>Drivers are reviewed 3–4 times per shift so small issues do not sit unnoticed.</p>
-            <div class="human-state__link"><i></i><span>Signal received</span><b>Human response</b></div>
-          </div>
-
-          <div class="signal-board__line" aria-hidden="true"><span></span></div>
-
-          <ol class="signal-list">
-            <li class="signal-item" data-reveal="signal">
-              <span class="signal-item__pulse"></span>
-              <div><small>Driver log</small><strong>Error flagged early</strong><p>The support team receives the signal and reviews the log.</p></div>
-              <span class="signal-item__state">Reviewing</span>
-            </li>
-            <li class="signal-item" data-reveal="signal">
-              <span class="signal-item__pulse"></span>
-              <div><small>ELD connection</small><strong>Status watched</strong><p>Open or disconnected, the team is notified and checks in.</p></div>
-              <span class="signal-item__state">Connected</span>
-            </li>
-            <li class="signal-item" data-reveal="signal">
-              <span class="signal-item__pulse"></span>
-              <div><small>Road proximity</small><strong>20-mile heads-up</strong><p>A nearby weigh station or police signal gives the team time to prepare the driver.</p></div>
-              <span class="signal-item__state">Watching</span>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="included-section section-shell" id="included">
-        <div class="section-heading section-heading--split">
-          <div>
-            <p class="kicker" data-reveal="fade">What you get</p>
-            <h2 data-reveal="line">One service.<br>A cleaner shift.</h2>
-          </div>
-          <p data-reveal="fade">Practical coverage for the device, the records and the driver — without hidden fees or a maze of add-ons.</p>
-        </div>
-
-        <div class="service-manifest">
-          <div class="manifest-group" data-reveal="row">
-            <div class="manifest-group__label"><span>Driver watch</span><small>All shifts</small></div>
-            <ul>
-              <li><i></i><span>Real-Time Fleet Monitoring</span></li>
-              <li><i></i><span>24/7 Dedicated Driver Support</span></li>
-              <li><i></i><span>Fast Issue Resolution</span></li>
-            </ul>
-          </div>
-          <div class="manifest-group" data-reveal="row">
-            <div class="manifest-group__label"><span>Compliance</span><small>Stay ready</small></div>
-            <ul>
-              <li><i></i><span>Full Audit Support</span></li>
-              <li><i></i><span>Professional Compliance Consulting</span></li>
-              <li><i></i><span>Profile &amp; BOL Fixing</span></li>
-            </ul>
-          </div>
-          <div class="manifest-group" data-reveal="row">
-            <div class="manifest-group__label"><span>System</span><small>Ready to work</small></div>
-            <ul>
-              <li><i></i><span>AU ELD Device</span></li>
-              <li><i></i><span>No Hidden Fees</span></li>
-              <li><i></i><span>Highway, MacroPoint, Trucking Cloud &amp; Project44</span></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="offer-section section-shell" id="offer">
-        <div class="offer-card">
-          <div class="offer-card__copy">
-            <p class="kicker kicker--light" data-reveal="fade">Limited-time offer</p>
-            <h2 data-reveal="line">Run one week.<br>Feel the difference.</h2>
-            <p data-reveal="fade">Try the complete AU ELD service free for one week. Continue for $120 per truck, per month.</p>
-            <a class="action action--light" href="#contact" data-reveal="fade"><span>Start the free week</span><span class="action__arrow" aria-hidden="true">↓</span></a>
-          </div>
-          <div class="offer-card__price" data-reveal="scale">
-            <span class="offer-card__free">1</span>
-            <span class="offer-card__unit">week free</span>
-            <span class="offer-card__then">then</span>
-            <strong>$120</strong>
-            <small>truck / month</small>
-          </div>
-        </div>
-        <div class="service-promise" data-reveal="row">
-          <span class="service-promise__mark">AU</span>
-          <p><strong>We stand behind the service.</strong> If a violation occurs because of our ELD service, the affected driver receives that month of service free.</p>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact">
-        <div class="contact-section__heading section-shell">
-          <p class="kicker" data-reveal="fade">Direct to the team</p>
-          <h2 data-reveal="line">No form.<br>No waiting room.</h2>
-          <p data-reveal="fade">Choose the fastest route for you. A real AU ELD team member takes it from there.</p>
-        </div>
-
-        <div class="contact-console section-shell">
-          <a class="contact-console__phone" href="tel:+14408086300" data-reveal="row">
-            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5c.9-.9 2.1-.5 2.6.4l1.5 2.7c.4.8.2 1.7-.5 2.2l-1.2.9a13 13 0 0 0 5.8 5.8l.9-1.2c.5-.7 1.4-.9 2.2-.5l2.7 1.5c.9.5 1.3 1.7.4 2.6l-1.1 1.1c-1 1-2.6 1.4-4 1C8.2 18.8 5.2 15.8 2.5 9.7c-.4-1.4 0-3 1-4L5 4.5Z"></path></svg></span>
-            <span class="contact-console__copy"><small>Primary channel · Phone</small><strong>+1 (440) 808-6300</strong><span>Tap to call AU ELD</span></span>
-            <span class="contact-console__go" aria-hidden="true">↗</span>
-          </a>
-
-          <div class="contact-console__secondary">
-            <a class="contact-route" href="https://t.me/AUELD_manager" target="_blank" rel="noreferrer" data-reveal="row">
-              <span class="contact-route__symbol" aria-hidden="true">TG</span>
-              <span><small>Telegram</small><strong>@AUELD_manager</strong></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-            <a class="contact-route" href="mailto:aueldservice@gmail.com" data-reveal="row">
-              <span class="contact-route__symbol" aria-hidden="true">@</span>
-              <span><small>Email</small><strong>aueldservice@<wbr>gmail.com</strong></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-          </div>
-        </div>
-
-        <footer class="site-footer section-shell">
-          <a class="brand brand--footer" href="#top" aria-label="Back to top">
-            <span class="brand__mark"><img src="assets/au-eld-mark.png" alt=""></span>
-            <span class="brand__name">AU ELD</span>
-            <span class="brand__service">Service</span>
-          </a>
-          <p>Driver support. Compliance guidance. A second set of eyes on every shift.</p>
-          <span>© <span data-year></span> AU ELD Service</span>
-        </footer>
-      </section>
-    </main>
-
-    <script src="script.js" defer></script>
-  </body>
+  <footer class="footer"><div class="shell"><a class="brand" href="#top" aria-label="AU ELD Service, back to top"><img src="assets/au-eld-mark.png" width="52" height="42" alt=""><span>AU ELD<small>Service</small></span></a><p>A little less worry.<br>A lot more road ahead.</p><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div><div class="footer-bottom shell"><span>© <span data-year></span> AU ELD Service</span><span>For every driver. Every shift.</span></div></footer>
+  <nav class="mobile-dock" aria-label="Quick contact"><button type="button" data-copy-phone aria-label="Copy phone number +1 (440) 808-6300"><span data-copy-label>Copy number</span> <span aria-hidden="true">⧉</span></button><a href="https://t.me/AUELD_manager" target="_blank" rel="noreferrer">Telegram <span aria-hidden="true">↗</span></a></nav>
+  <div class="copy-toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
 </html>

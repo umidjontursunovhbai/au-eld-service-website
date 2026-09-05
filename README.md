@@ -1,4 +1,4 @@
-# AU ELD Service · Watchline
+# AU ELD Service · Open Road
 
 A custom, one-page AU ELD marketing site built from scratch with semantic HTML,
 CSS and a small JavaScript motion layer. It does not use Scrollcraft or another
@@ -6,9 +6,9 @@ UI framework.
 
 ## Direction
 
-Watchline is based on the visual language of an after-hours fleet support desk:
-route traces, operational labels, condensed dispatch typography and a human
-attention state. The design plan and critique are documented in `DESIGN.md`.
+Open Road pairs cool porcelain, AU cobalt blue, geometric typography and a
+cinematic transport photograph. The new plan and image provenance are in
+`OPEN-ROAD-DESIGN.md`; `DESIGN.md` records the preceding design, not this version.
 
 ## Content
 
@@ -17,7 +17,7 @@ attention state. The design plan and critique are documented in `DESIGN.md`.
 - Audit, compliance, profile and BOL support
 - AU ELD device and integration coverage
 - One-week free trial and $120 per-truck monthly price
-- Direct Phone, Telegram and Email actions
+- Copy-only phone number, direct Telegram and Email actions (no auto-call)
 
 ## Local preview
 
@@ -34,5 +34,6 @@ Open `http://127.0.0.1:4190/`.
 - Responsive from 320px through wide desktop
 - No horizontal page scrolling
 - Semantic contact links and keyboard focus states
-- Grouped text reveal, scroll-driven background movement and hover feedback
+- Grouped reveals, scroll-colored headings, drawn icons and tactile hover feedback
+- No scroll trapping, horizontal carousels or scroll-driven photo zoom
 - Reduced-motion support
