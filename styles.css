@@ -1262,10 +1262,13 @@ button:focus-visible {
   margin-top: 18px;
 }
 
-.commitment-card__signature-line {
-  width: 168px;
-  height: 24px;
-  border-bottom: 1px solid #7c91a1;
+.commitment-card__signature-image {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .commitment-card__signature small {
