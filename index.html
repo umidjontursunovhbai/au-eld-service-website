@@ -76,7 +76,7 @@
       }
     </script>
     <script>document.documentElement.classList.add('js');</script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=service-commitment-1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -252,10 +252,6 @@
             <small>truck / month</small>
           </div>
         </div>
-        <div class="service-promise" data-reveal="row">
-          <span class="service-promise__mark">AU</span>
-          <p><strong>We stand behind the service.</strong> If a violation occurs because of our ELD service, the affected driver receives that month of service free.</p>
-        </div>
       </section>
 
       <section class="contact-section" id="contact">
@@ -295,6 +291,25 @@
           <p>ELD support for trucking and logistics fleets. A second set of eyes on every shift.</p>
           <span>© <span data-year></span> AU ELD Services · AUELD</span>
         </footer>
+
+        <section class="commitment-section section-shell" id="service-commitment" aria-labelledby="commitment-title">
+          <article class="commitment-card" data-reveal="fade">
+            <div class="commitment-card__issuer">
+              <img src="assets/au-eld-mark.png" width="60" height="32" alt="">
+              <span>AU ELD Services</span>
+            </div>
+            <h2 class="commitment-card__title" id="commitment-title">Service Commitment</h2>
+            <p class="commitment-card__lead">Our service. Our responsibility.</p>
+            <p class="commitment-card__promise">If a violation occurs because of our ELD service, the affected driver receives <strong>that month of service free.</strong></p>
+            <!-- Replace the blank signature space with the owner's approved signature and name. -->
+            <div class="commitment-card__signature" aria-label="Signature space, not yet signed">
+              <span class="commitment-card__signature-line" aria-hidden="true"></span>
+              <small>Authorized signature</small>
+              <strong>AU ELD Services</strong>
+            </div>
+            <p class="commitment-card__caption">A commitment from our team to yours.</p>
+          </article>
+        </section>
       </section>
     </main>
 
