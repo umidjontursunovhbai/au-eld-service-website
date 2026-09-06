@@ -77,6 +77,7 @@
     </script>
     <script>document.documentElement.classList.add('js');</script>
     <link rel="stylesheet" href="styles.css?v=commitment-footer-1">
+    <link rel="stylesheet" href="trial-form.css?v=formsubmit-1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -256,30 +257,60 @@
 
       <section class="contact-section" id="contact">
         <div class="contact-section__heading section-shell">
-          <p class="kicker" data-reveal="fade">Direct to the team</p>
-          <h2 data-reveal="line">No form.<br>No waiting room.</h2>
-          <p data-reveal="fade">Choose the fastest route for you. A real AU ELD team member takes it from there.</p>
+          <p class="kicker" data-reveal="fade">Your fleet. Our next shift.</p>
+          <h2 data-reveal="line">Start your<br>free week.</h2>
+          <p data-reveal="fade">Tell us about your fleet. Our team will contact you to arrange your one-week trial.</p>
         </div>
 
-        <div class="contact-console section-shell">
-          <button class="contact-console__phone" type="button" data-copy-phone data-reveal="row" aria-label="Copy AU ELD phone number +1 (440) 808-6300">
-            <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5c.9-.9 2.1-.5 2.6.4l1.5 2.7c.4.8.2 1.7-.5 2.2l-1.2.9a13 13 0 0 0 5.8 5.8l.9-1.2c.5-.7 1.4-.9 2.2-.5l2.7 1.5c.9.5 1.3 1.7.4 2.6l-1.1 1.1c-1 1-2.6 1.4-4 1C8.2 18.8 5.2 15.8 2.5 9.7c-.4-1.4 0-3 1-4L5 4.5Z"></path></svg></span>
-            <span class="contact-console__copy"><small>Primary channel · Phone</small><strong>+1 (440) 808-6300</strong><span data-copy-label>Tap to copy the number</span></span>
-            <span class="contact-console__go" aria-hidden="true">⧉</span>
-          </button>
+        <div class="trial-intake section-shell" id="free-trial">
+          <form class="trial-intake__form" id="trial-form" action="https://formsubmit.co/aueldservice@gmail.com" method="POST" aria-labelledby="trial-form-title" aria-describedby="trial-form-privacy" data-reveal="fade">
+            <input type="hidden" name="_subject" value="New AU ELD free-trial request">
+            <input type="hidden" name="_template" value="table">
+            <input class="trial-intake__honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="trial-intake__topline"><span>AU / Fleet intake</span><span>1 week free</span></div>
+            <div class="trial-intake__intro">
+              <h3 id="trial-form-title">A few details.<br> We’ll take it from here.</h3>
+              <p>Then $120 per truck / month.<br> No hidden fees.</p>
+            </div>
+            <div class="trial-intake__fields">
+              <div class="trial-intake__field">
+                <label for="trial-company">Company name</label>
+                <input id="trial-company" name="company" type="text" autocomplete="organization" placeholder="Your trucking company" maxlength="120" required>
+              </div>
+              <div class="trial-intake__field">
+                <label for="trial-trucks">Number of trucks</label>
+                <input id="trial-trucks" name="trucks" type="number" inputmode="numeric" placeholder="e.g. 12" min="1" max="100000" step="1" required>
+              </div>
+              <div class="trial-intake__field">
+                <label for="trial-phone">Phone</label>
+                <input id="trial-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 (555) 123-4567" minlength="7" maxlength="32" pattern="(?=.*[0-9])[+0-9\(\) .\-]{7,32}" title="Enter a phone number using digits, spaces, +, parentheses or hyphens." required>
+              </div>
+              <div class="trial-intake__field">
+                <label for="trial-email">Email</label>
+                <input id="trial-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" maxlength="254" required>
+              </div>
+            </div>
+            <button class="trial-intake__submit" type="submit"><span>Start Free Trial</span><span aria-hidden="true">↗</span></button>
+            <p class="trial-intake__privacy" id="trial-form-privacy">We’ll use these details to contact you about your AU ELD trial. Sent to our team via <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noreferrer">FormSubmit</a>.</p>
+            <p class="trial-intake__status" id="trial-form-status" role="status" aria-live="polite" tabindex="-1"></p>
+          </form>
 
-          <div class="contact-console__secondary">
-            <a class="contact-route" href="https://t.me/AUELD_manager" target="_blank" rel="noreferrer" data-reveal="row">
-              <span class="contact-route__symbol" aria-hidden="true">TG</span>
-              <span><small>Telegram</small><strong>@AUELD_manager</strong></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-            <a class="contact-route" href="mailto:aueldservice@gmail.com" data-reveal="row">
-              <span class="contact-route__symbol" aria-hidden="true">@</span>
-              <span><small>Email</small><strong>aueldservice@<wbr>gmail.com</strong></span>
-              <b aria-hidden="true">↗</b>
-            </a>
-          </div>
+          <aside class="trial-intake__direct" aria-labelledby="direct-contact-title" data-reveal="fade">
+            <span class="trial-intake__availability"><i aria-hidden="true"></i>24/7 driver support</span>
+            <h3 id="direct-contact-title">Prefer to<br> talk first?</h3>
+            <p>The same team. Your choice of channel.</p>
+            <div class="trial-intake__channels">
+              <button type="button" data-copy-phone aria-label="Copy AU ELD phone number +1 (440) 808-6300">
+                <span><small>Phone <span data-copy-label>· Copy number</span></small><strong>+1 (440) 808-6300</strong></span><span aria-hidden="true">⧉</span>
+              </button>
+              <a href="https://t.me/AUELD_manager" target="_blank" rel="noreferrer">
+                <span><small>Telegram</small><strong>@AUELD_manager</strong></span><span aria-hidden="true">↗</span>
+              </a>
+              <a href="mailto:aueldservice@gmail.com">
+                <span><small>Email</small><strong>aueldservice@<wbr>gmail.com</strong></span><span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </aside>
         </div>
 
         <section class="commitment-section section-shell" id="service-commitment" aria-labelledby="commitment-title">
@@ -315,5 +346,6 @@
     <div class="copy-toast" role="status" aria-live="polite"></div>
 
     <script src="script.js" defer></script>
+    <script src="trial-form.js?v=formsubmit-1" defer></script>
   </body>
 </html>
