@@ -1180,7 +1180,11 @@ button:focus-visible {
 .commitment-section {
   position: relative;
   z-index: 2;
-  padding-block: 24px 64px;
+  padding-block: clamp(64px, 8vw, 104px) 64px;
+}
+
+.commitment-section + .site-footer {
+  margin-top: 0;
 }
 
 .commitment-card {
