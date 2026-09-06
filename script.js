@@ -7,6 +7,9 @@
   const signalBoard = document.querySelector("[data-signal-board]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const finePointer = window.matchMedia("(pointer: fine)");
+  const phoneCopyButtons = [...document.querySelectorAll("[data-copy-phone]")];
+  const copyToast = document.querySelector(".copy-toast");
+  const phoneNumber = "+1 (440) 808-6300";
 
   let scrollFrame = 0;
   let pointerFrame = 0;
@@ -16,6 +19,58 @@
   const setYear = () => {
     document.querySelectorAll("[data-year]").forEach((node) => {
       node.textContent = String(new Date().getFullYear());
+    });
+  };
+
+  const fallbackCopyPhone = () => {
+    const field = document.createElement("textarea");
+    field.value = phoneNumber;
+    field.setAttribute("readonly", "");
+    field.style.position = "fixed";
+    field.style.left = "-9999px";
+    document.body.appendChild(field);
+    field.select();
+    document.execCommand("copy");
+    field.remove();
+  };
+
+  const showCopyFeedback = (button, ok = true) => {
+    const labels = button.querySelectorAll("[data-copy-label]");
+    const original = [...labels].map((label) => label.textContent);
+
+    labels.forEach((label) => {
+      label.textContent = ok ? "Copied" : "Copy manually";
+    });
+
+    if (copyToast) {
+      copyToast.textContent = ok ? "Phone number copied" : `Copy manually: ${phoneNumber}`;
+      copyToast.classList.add("is-visible");
+      clearTimeout(copyToast.hideTimer);
+      copyToast.hideTimer = setTimeout(() => copyToast.classList.remove("is-visible"), 2200);
+    }
+
+    clearTimeout(button.copyTimer);
+    button.copyTimer = setTimeout(() => {
+      labels.forEach((label, index) => {
+        label.textContent = original[index];
+      });
+    }, 1800);
+  };
+
+  const initPhoneCopy = () => {
+    phoneCopyButtons.forEach((button) => {
+      button.addEventListener("click", async () => {
+        try {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(phoneNumber);
+          } else {
+            fallbackCopyPhone();
+          }
+          showCopyFeedback(button, true);
+        } catch {
+          showCopyFeedback(button, false);
+        }
+      });
     });
   };
 
@@ -103,6 +158,7 @@
 
   const init = () => {
     setYear();
+    initPhoneCopy();
     prepareRevealTiming();
     updateScrollState();
     startRevealObserver();

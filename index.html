@@ -45,11 +45,11 @@
         <a href="#included">Included</a>
         <a href="#offer">Free week</a>
       </nav>
-      <a class="header-call" href="tel:+14408086300">
-        <span class="header-call__desktop">Call the team</span>
-        <span class="header-call__mobile">Call now</span>
+      <button class="header-call" type="button" data-copy-phone aria-label="Copy AU ELD phone number +1 (440) 808-6300">
+        <span class="header-call__desktop" data-copy-label>Copy number</span>
+        <span class="header-call__mobile" data-copy-label>Copy</span>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4.5c.9-.9 2.1-.5 2.6.4l1.5 2.7c.4.8.2 1.7-.5 2.2l-1.2.9a13 13 0 0 0 5.8 5.8l.9-1.2c.5-.7 1.4-.9 2.2-.5l2.7 1.5c.9.5 1.3 1.7.4 2.6l-1.1 1.1c-1 1-2.6 1.4-4 1C8.2 18.8 5.2 15.8 2.5 9.7c-.4-1.4 0-3 1-4L5 4.5Z"></path></svg>
-      </a>
+      </button>
     </header>
 
     <main id="main">
@@ -201,11 +201,11 @@
         </div>
 
         <div class="contact-console section-shell">
-          <a class="contact-console__phone" href="tel:+14408086300" data-reveal="row">
+          <button class="contact-console__phone" type="button" data-copy-phone data-reveal="row" aria-label="Copy AU ELD phone number +1 (440) 808-6300">
             <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4.5c.9-.9 2.1-.5 2.6.4l1.5 2.7c.4.8.2 1.7-.5 2.2l-1.2.9a13 13 0 0 0 5.8 5.8l.9-1.2c.5-.7 1.4-.9 2.2-.5l2.7 1.5c.9.5 1.3 1.7.4 2.6l-1.1 1.1c-1 1-2.6 1.4-4 1C8.2 18.8 5.2 15.8 2.5 9.7c-.4-1.4 0-3 1-4L5 4.5Z"></path></svg></span>
-            <span class="contact-console__copy"><small>Primary channel · Phone</small><strong>+1 (440) 808-6300</strong><span>Tap to call AU ELD</span></span>
-            <span class="contact-console__go" aria-hidden="true">↗</span>
-          </a>
+            <span class="contact-console__copy"><small>Primary channel · Phone</small><strong>+1 (440) 808-6300</strong><span data-copy-label>Tap to copy the number</span></span>
+            <span class="contact-console__go" aria-hidden="true">⧉</span>
+          </button>
 
           <div class="contact-console__secondary">
             <a class="contact-route" href="https://t.me/AUELD_manager" target="_blank" rel="noreferrer" data-reveal="row">
@@ -232,6 +232,8 @@
         </footer>
       </section>
     </main>
+
+    <div class="copy-toast" role="status" aria-live="polite"></div>
 
     <script src="script.js" defer></script>
   </body>

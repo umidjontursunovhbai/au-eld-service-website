@@ -315,15 +315,18 @@ button:focus-visible {
 }
 
 .header-call {
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-self: end;
   gap: 14px;
   min-height: 48px;
   padding: 0 8px 0 20px;
-  border: 1px solid var(--line-strong);
   border-radius: 18px 8px 18px 8px;
   color: var(--ledger-white);
+  font: inherit;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1266,13 +1269,17 @@ button:focus-visible {
 }
 
 .contact-console__phone {
+  border: 1px solid rgba(112, 200, 255, 0.34);
+  color: var(--ledger-white);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
   display: grid;
   grid-template-columns: 88px minmax(0, 1fr) 58px;
   gap: 28px;
   align-items: center;
   min-height: 172px;
   padding: 26px 30px;
-  border: 1px solid rgba(112, 200, 255, 0.34);
   border-radius: 40px 11px 40px 11px;
   background:
     linear-gradient(105deg, rgba(13, 79, 140, 0.95), rgba(9, 31, 47, 0.88) 62%, rgba(7, 16, 24, 0.94));
@@ -1350,6 +1357,33 @@ button:focus-visible {
 .contact-console__phone:hover .contact-console__go {
   background: rgba(112, 200, 255, 0.1);
   transform: translate(2px, -2px);
+}
+
+.copy-toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 80;
+  max-width: min(320px, calc(100vw - 48px));
+  padding: 12px 16px;
+  border: 1px solid rgba(112, 200, 255, 0.34);
+  border-radius: 18px 8px 18px 8px;
+  background: rgba(4, 12, 18, 0.92);
+  color: var(--ledger-white);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+  font-family: var(--font-utility);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translateY(12px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.copy-toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .contact-console__secondary {
